@@ -1,0 +1,15 @@
+allow: 
+ - read
+ - write
+
+#  need net if you load images from url
+ - net
+
+unstable: true
+
+scripts:
+  start: deno run ./main.ts
+  dev: deno run --watch ./main.ts
+
+  test: deno test
+  clear: rm ./output/*
