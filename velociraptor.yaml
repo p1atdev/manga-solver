@@ -10,3 +10,4 @@ unstable: true
 scripts:
   test: deno test
   clear: rm ./output/*
+  fmt: deno fmt

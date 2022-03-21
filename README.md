@@ -1,6 +1,7 @@
 # manga-solver
 
-manga-solver can decrypt images used in web manga services such as Shonen Jump Plus and Sunday Webry.
+manga-solver can decrypt images used in web manga services such as Shonen Jump
+Plus and Sunday Webry.
 
 [![vr scripts](https://badges.velociraptor.run/flat.svg)](https://velociraptor.run)
 [![codecov](https://codecov.io/gh/p1atdev/manga-solver/branch/main/graph/badge.svg?token=50R5UBEDIZ)](https://codecov.io/gh/p1atdev/manga-solver)
@@ -12,7 +13,7 @@ manga-solver can decrypt images used in web manga services such as Shonen Jump P
 ```ts
 // ./main.ts
 
-import { Solver, getImage } from "https://deno.land/x/manga-solver/mod.ts";
+import { getImage, Solver } from "https://deno.land/x/manga-solver/mod.ts";
 
 // put your own image
 const image = await getImage(
@@ -25,7 +26,6 @@ solver.solve();
 
 // get the result
 await Deno.writeFile("./output/example.jpg", solver.buffer());
-
 ```
 
 and
@@ -39,7 +39,7 @@ deno run --allow-read ./main.ts
 ```ts
 // ./main.ts
 
-import { Solver, getImage } from "https://deno.land/x/manga-solver/mod.ts";
+import { getImage, Solver } from "https://deno.land/x/manga-solver/mod.ts";
 
 // image url
 const image = await getImage(
@@ -52,7 +52,6 @@ solver.solve();
 
 // get the result
 await Deno.writeFile("./output/ms-little-gray.jpg", solver.buffer());
-
 ```
 
 and
@@ -60,7 +59,3 @@ and
 ```bash
 deno run --allow-net --allow-read ./main.ts
 ```
-
-
-
-
