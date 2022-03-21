@@ -1,7 +1,7 @@
 {
-    "fmt": {
-        "files": {
-            "exclude": ["*.md", "*.json"]
-        }
+  "fmt": {
+    "files": {
+      "exclude": ["*.md", "*.json"]
     }
+  }
 }
