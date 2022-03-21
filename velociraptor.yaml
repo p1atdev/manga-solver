@@ -8,8 +8,5 @@ allow:
 unstable: true
 
 scripts:
-  start: deno run ./main.ts
-  dev: deno run --watch ./main.ts
-
   test: deno test
   clear: rm ./output/*
