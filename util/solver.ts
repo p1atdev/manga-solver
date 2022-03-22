@@ -21,11 +21,11 @@ export class Solver {
 
   image: Image;
 
-  constructor(image: Image) {
+  constructor(image: Image, width?: number, height?: number) {
     this.image = image;
 
-    this.width = image.width();
-    this.height = image.height();
+    this.width = width ?? image.width();
+    this.height = height ?? image.height();
     this.cell_width =
       Math.floor(this.width / (this.DIVIDE_NUM * this.MULTIPLE)) *
       this.MULTIPLE;
@@ -76,6 +76,11 @@ export class Solver {
   }
 
   buffer() {
+    return this.canvas.toBuffer();
+  }
+
+  // same as buffer()
+  answer() {
     return this.canvas.toBuffer();
   }
 }

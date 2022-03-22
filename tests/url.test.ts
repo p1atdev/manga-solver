@@ -9,7 +9,7 @@ Deno.test("Decode image from sunday-webry", async () => {
 
   solver.solve();
 
-  await Deno.writeFile("./output/frieren.jpg", solver.buffer());
+  await Deno.writeFile("./output/frieren.jpg", solver.answer());
 });
 
 Deno.test("Decode image from shonenjumpplus", async () => {
@@ -21,5 +21,5 @@ Deno.test("Decode image from shonenjumpplus", async () => {
 
   solver.solve();
 
-  await Deno.writeFile("./output/ms-little-gray.jpg", solver.buffer());
+  await Deno.writeFile("./output/ms-little-gray.jpg", solver.answer());
 });

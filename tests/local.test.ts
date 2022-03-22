@@ -19,5 +19,5 @@ Deno.test("Decode image from local (./assets/0.jpg)", async () => {
 
   solver.solve();
 
-  await Deno.writeFile("./output/local.jpg", solver.buffer());
+  await Deno.writeFile("./output/local.jpg", solver.answer());
 });
